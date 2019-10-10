@@ -16,6 +16,7 @@ hspoon_list = {
     -- "UnsplashZ",
     "WinWin",
     "Caffeine",
+    "Weather",
 }
 
 -- appM environment keybindings. Bundle `id` is prefered, but application `name` will be ok.
