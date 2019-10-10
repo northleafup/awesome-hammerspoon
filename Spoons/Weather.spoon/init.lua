@@ -55,16 +55,16 @@ function obj:start()
     return self
 end
 
---用于读取URL，需要读取private/weather_config.lua中的内容
+--用于读取URL，需要读取private/weather_api_uri.lua中的内容
 --示例：weatherurl = 'https://www.tianqiapi.com/api?version=v1&appid=1111111111&&appsecret=nN1u'
 function getUrl()
-    custom_config = hs.fs.pathToAbsolute(os.getenv("HOME") .. '/.hammerspoon/private/weather_config.lua')
+    custom_config = hs.fs.pathToAbsolute(os.getenv("HOME") .. '/.hammerspoon/private/weather_api_url.lua')
     if custom_config then
-        print("Loading weather_config.lua")
-        require('private/weather_config')
+        print("Loading weather_api_url.lua")
+        require('private/weather_api_url')
         urlApi = weatherurl
     else
-        print("There is no weather_config.lua")
+        print("There is no weather_api_url.lua")
         return
     end
 

@@ -1,2 +1,2 @@
 .DS_Store
-private/weather_config.lua
+private/weather_api_url.lua
