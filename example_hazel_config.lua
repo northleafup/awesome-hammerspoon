@@ -104,7 +104,6 @@ local function watchPath(path, files, process_cb)
   -- settle down.
   -- 10 可以自定义
   hs.timer.doAfter(waitTime, function()
-      print("0999988888888888888")
     -- loop through the files and call the process_cb function on any that are
     -- not ignored, still exist, and are found in the given path.
     for _,file in ipairs(files) do
