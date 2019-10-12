@@ -130,5 +130,5 @@ Finally press `cmd + ctrl + shift + r` to reload the configuration.
 [https://github.com/dharmapoudel/hammerspoon-config](https://github.com/dharmapoudel/hammerspoon-config)
 
 [http://tracesof.net/uebersicht/](http://tracesof.net/uebersicht/)
-
+https://github.com/dbalatero/VimMode.spoon
 </details>

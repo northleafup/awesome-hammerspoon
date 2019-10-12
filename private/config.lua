@@ -18,6 +18,7 @@ hspoon_list = {
     --"Caffeine",
     --"Weather",
     "Hazel",
+    --    "VimMode",
 }
 
 -- appM environment keybindings. Bundle `id` is prefered, but application `name` will be ok.
@@ -96,3 +97,4 @@ hstype_keys = {"alt", "V"}
 
 -- Toggle Hammerspoon console
 hsconsole_keys = {"alt", "Z"}
+
