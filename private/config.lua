@@ -11,12 +11,13 @@ hspoon_list = {
     --"HSaria2",
     --"HSearch",
     -- "KSheet",
-    "SpeedMenu",
+    --"SpeedMenu",
     -- "TimeFlow",
     -- "UnsplashZ",
     "WinWin",
-    "Caffeine",
-    "Weather",
+    --"Caffeine",
+    --"Weather",
+    "Hazel",
 }
 
 -- appM environment keybindings. Bundle `id` is prefered, but application `name` will be ok.
