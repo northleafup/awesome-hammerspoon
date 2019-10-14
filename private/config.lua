@@ -1,100 +1,57 @@
--- Specify Spoons which will be loaded
-hspoon_list = {
-    "AClock",
-    --  "BingDaily",
-    -- "Calendar",
-    -- "CircleClock",
-    "ClipShow",
-    "CountDown",
-    "FnMate",
-    --"HCalendar",
-    --"HSaria2",
-    --"HSearch",
-    -- "KSheet",
-    --"SpeedMenu",
-    -- "TimeFlow",
-    -- "UnsplashZ",
-    "WinWin",
-    --"Caffeine",
-    --"Weather",
-    "Hazel",
-    --    "VimMode",
-}
 
--- appM environment keybindings. Bundle `id` is prefered, but application `name` will be ok.
-hsapp_list = {
-    {key = 'a', name = 'Atom'},
-    {key = 'c', id = 'com.google.Chrome'},
-    {key = 'd', name = 'ShadowsocksX'},
-    {key = 'e', name = 'Emacs'},
-    {key = 'f', name = 'Finder'},
-    {key = 'i', name = 'iTerm'},
-    {key = 'k', name = 'KeyCastr'},
-    {key = 'l', name = 'Sublime Text'},
-    {key = 'm', name = 'MacVim'},
-    {key = 'o', name = 'LibreOffice'},
-    {key = 'p', name = 'mpv'},
-    {key = 'r', name = 'VimR'},
-    {key = 's', name = 'Safari'},
-    {key = 't', name = 'Terminal'},
-    {key = 'v', id = 'com.apple.ActivityMonitor'},
-    {key = 'w', name = 'Mweb'},
-    {key = 'y', id = 'com.apple.systempreferences'},
-}
-
--- Modal supervisor keybinding, which can be used to temporarily disable ALL modal environments.
-hsupervisor_keys = {{"cmd", "shift", "ctrl"}, "Q"}
-
--- Reload Hammerspoon configuration
-hsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
-
--- Toggle help panel of this configuration.
-hshelp_keys = {{"alt", "shift"}, "/"}
-
--- aria2 RPC host address
-hsaria2_host = "http://localhost:6800/jsonrpc"
--- aria2 RPC host secret
-hsaria2_secret = "token"
-
-----------------------------------------------------------------------------------------------------
--- Those keybindings below could be disabled by setting to {"", ""} or {{}, ""}
-
--- Window hints keybinding: Focuse to any window you want
-hswhints_keys = {"alt", "tab"}
-
--- appM environment keybinding: Application Launcher
-hsappM_keys = {"alt", "A"}
-
--- clipshowM environment keybinding: System clipboard reader
-hsclipsM_keys = {"alt", "C"}
-
--- Toggle the display of aria2 frontend
-hsaria2_keys = {"alt", "D"}
-
--- Launch Hammerspoon Search
-hsearch_keys = {"alt", "G"}
-
--- Read Hammerspoon and Spoons API manual in default browser
-hsman_keys = {"alt", "H"}
-
--- countdownM environment keybinding: Visual countdown
-hscountdM_keys = {"alt", "I"}
-
--- Lock computer's screen
-hslock_keys = {"alt", "L"}
-
--- resizeM environment keybinding: Windows manipulation
-hsresizeM_keys = {"alt", "R"}
-
--- cheatsheetM environment keybinding: Cheatsheet copycat
-hscheats_keys = {"alt", "S"}
-
--- Show digital clock above all windows
-hsaclock_keys = {"alt", "T"}
-
--- Type the URL and title of the frontmost web page open in Google Chrome or Safari.
-hstype_keys = {"alt", "V"}
-
--- Toggle Hammerspoon console
-hsconsole_keys = {"alt", "Z"}
-
+--k-- Modal supervisor keybinding, which can be used to temporarily disable ALL modal environments.
+--khsupervisor_keys = {{"cmd", "shift", "ctrl"}, "Q"}
+--k
+--k-- Reload Hammerspoon configuration
+--khsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
+--k
+--k-- Toggle help panel of this configuration.
+--khshelp_keys = {{"alt", "shift"}, "/"}
+--k
+--k-- aria2 RPC host address
+--khsaria2_host = "http://localhost:6800/jsonrpc"
+--k-- aria2 RPC host secret
+--khsaria2_secret = "token"
+--k
+--k----------------------------------------------------------------------------------------------------
+--k-- Those keybindings below could be disabled by setting to {"", ""} or {{}, ""}
+--k
+--k-- Window hints keybinding: Focuse to any window you want
+--khswhints_keys = {"alt", "tab"}
+--k
+--k-- appM environment keybinding: Application Launcher
+--khsappM_keys = {"alt", "A"}
+--k
+--k-- clipshowM environment keybinding: System clipboard reader
+--khsclipsM_keys = {"alt", "C"}
+--k
+--k-- Toggle the display of aria2 frontend
+--khsaria2_keys = {"alt", "D"}
+--k
+--k-- Launch Hammerspoon Search
+--khsearch_keys = {"alt", "G"}
+--k
+--k-- Read Hammerspoon and Spoons API manual in default browser
+--khsman_keys = {"alt", "H"}
+--k
+--k-- countdownM environment keybinding: Visual countdown
+--khscountdM_keys = {"alt", "I"}
+--k
+--k-- Lock computer's screen
+--khslock_keys = {"alt", "L"}
+--k
+--k-- resizeM environment keybinding: Windows manipulation
+--khsresizeM_keys = {"alt", "R"}
+--k
+--k-- cheatsheetM environment keybinding: Cheatsheet copycat
+--khscheats_keys = {"alt", "S"}
+--k
+--k-- Show digital clock above all windows
+--khsaclock_keys = {"alt", "T"}
+--k
+--k-- Type the URL and title of the frontmost web page open in Google Chrome or Safari.
+--khstype_keys = {"alt", "V"}
+--k
+--k-- Toggle Hammerspoon console
+--khsconsole_keys = {"alt", "Z"}
+--k

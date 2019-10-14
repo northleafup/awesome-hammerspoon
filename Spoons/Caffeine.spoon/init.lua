@@ -94,9 +94,9 @@ end
 function obj.setDisplay(state)
     local result
     if state then
-        result = obj.menuBarItem:setIcon(obj.spoonPath.."/caffeine-on.pdf")
+        result = obj.menuBarItem:setIcon(obj.spoonPath.."/active.png")
     else
-        result = obj.menuBarItem:setIcon(obj.spoonPath.."/caffeine-off.pdf")
+        result = obj.menuBarItem:setIcon(obj.spoonPath.."/inactive.png")
     end
 end
 
