@@ -19,6 +19,44 @@ hsapp_list = {
     {key = 'y', id = 'com.apple.systempreferences'},
 }
 
+obj = {}
+function obj.reKey1()
+    print("this Is rekey1")
+    
+----------------------------------------------------------------------------------------------------
+-- appM modal environment
+spoon.ModalMgr:new("appM")
+local cmodal = spoon.ModalMgr.modal_list["appM"]
+cmodal:bind('', 'escape', 'Deactivate appM', function() spoon.ModalMgr:deactivate({"appM"}) end)
+cmodal:bind('', 'Q', 'Deactivate appM', function() spoon.ModalMgr:deactivate({"appM"}) end)
+cmodal:bind('', 'tab', 'Toggle Cheatsheet', function() spoon.ModalMgr:toggleCheatsheet() end)
+if not hsapp_list then
+    print('aaaaaaa')
+  hsapp_list = {
+        {key = 'f', name = 'Finder'},
+        {key = 's', name = 'Safari'},
+        {key = 't', name = 'Terminal'},
+        {key = 'v', id = 'com.apple.ActivityMonitor'},
+        {key = 'y', id = 'com.apple.systempreferences'},
+    }
+end
+for _, v in ipairs(hsapp_list) do
+    if v.id then
+        local located_name = hs.application.nameForBundleID(v.id)
+        if located_name then
+            cmodal:bind('', v.key, located_name, function()
+                hs.application.launchOrFocusByBundleID(v.id)
+                spoon.ModalMgr:deactivate({"appM"})
+            end)
+        end
+    elseif v.name then
+        cmodal:bind('', v.key, v.name, function()
+            hs.application.launchOrFocus(v.name)
+            spoon.ModalMgr:deactivate({"appM"})
+        end)
+    end
+end
+
 ----------------------------------------------------------------------------------------------------
 -- Then we create/register all kinds of modal keybindings environments.
 ----------------------------------------------------------------------------------------------------
@@ -30,7 +68,8 @@ if string.len(hswhints_keys[2]) > 0 then
         hs.hints.windowHints()
     end)
 end
----- Then we register some keybindings with modal supervisor
+
+------ Then we register some keybindings with modal supervisor
 hsappM_keys = hsappM_keys or {"alt", "A"}
 if string.len(hsappM_keys[2]) > 0 then
     print("this is keyboard")
@@ -40,6 +79,9 @@ if string.len(hsappM_keys[2]) > 0 then
         spoon.ModalMgr:activate({"appM"}, "#FFBD2E", true)
     end)
 end
+end
+return obj
+
 --k-- Modal supervisor keybinding, which can be used to temporarily disable ALL modal environments.
 --khsupervisor_keys = {{"cmd", "shift", "ctrl"}, "Q"}
 --k
@@ -96,3 +138,4 @@ end
 --k-- Toggle Hammerspoon console
 --khsconsole_keys = {"alt", "Z"}
 --k
+--

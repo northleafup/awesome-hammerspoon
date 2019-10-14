@@ -1,4 +1,7 @@
 .DS_Store
 private/weather_api_url.lua
 private/hazel_config.lua
-
+!Spoons/
+Spoons/*/
+!Spoons/ModalMgr.spoon/
+!Spoons/ModalMgr.spoon/*

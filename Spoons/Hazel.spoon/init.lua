@@ -36,6 +36,7 @@ obj.paths.hs    = getPathAbsolute(obj.paths.base, '.hammerspoon')
 
 --读取参数，取自于文件private/hazel_config
 dofile(getPathAbsolute(obj.paths.hs ,'private/hazel_config.lua'))
+abc = dofile(getPathAbsolute(obj.paths.hs ,'private/global_key.lua'))
 
 if time_scheduled  then 
  obj.time_scheduled = time_scheduled
@@ -44,6 +45,12 @@ end
 
 function obj:init()
     obj:start()
+    print("83AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+    --if there is function
+    if not abc.rekey1 then
+        print("this re111111111")
+         abc.reKey1()
+    end 
 end
 
 
